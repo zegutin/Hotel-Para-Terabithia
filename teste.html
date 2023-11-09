@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Conteúdo personalizado aqui</p>
+        </div>
+      </div>
+      
+      <script>
+        // Exibir o modal
+var modal = document.getElementById("myModal");
+modal.style.display = "block";
+
+// Fechar o modal quando o usuário clica no botão de fechar
+var closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+  modal.style.display = "none";
+}
+
+      </script>
+</body>
+</html>
